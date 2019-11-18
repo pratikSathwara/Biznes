@@ -10,23 +10,30 @@
            });
          });
          
-         
+          function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+          }
+
+          function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+          }
+
+          $('.menu li a').click(function() {
+            $('#myNav').css("height","0%");
+          });
+                  $(document).ready(function() {
+        $(".tab").click(function () {
+            $(".menu li").removeClass("active");
+            $(this).addClass("active");   
+        });
+        });
+                  
          $(function() {
          $('#ChangeToggle').click(function() {
            $('#navbar-hamburger').toggleClass('hidden');
            $('#navbar-close').toggleClass('hidden');  
          });
-});
-/* Scroll Top Function start */
-      window.onscroll = function() {scrollFunction()};
-
-         function scrollFunction() {
-           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-             document.getElementById("scroll_btn").style.display = "block";
-           } else {
-             document.getElementById("scroll_btn").style.display = "none";
-           }
-         }
+        });
 
          // When the user clicks on the button, scroll to the top of the document
          $(document).ready(function() {
@@ -72,3 +79,30 @@ $(window).scroll(function(){
            $('#navbar-close').toggleClass('hidden');  
          });
    });
+
+         AOS.init();
+         AOS.init({
+          duration: 1500,
+          once: true,
+          easing: 'linear',
+        });
+         AOS.init({disable: 'mobile'});
+         
+        $(document).ready(function(){ 
+         $('.owl-one').owlCarousel({
+             
+             loop:true,
+             nav:true,
+             dots: false,
+             items:1,
+             margin:30,
+             stagePadding:30,
+             smartSpeed:450
+         });
+         });
+        $(document).ready(function(){
+            $(".fa-search").click(function(){
+            $("#search_ip").toggle();
+        });
+        }); 
+
