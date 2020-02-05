@@ -58,7 +58,7 @@ a:hover {
   left:0;
   top:0;
  }
- 
+
 .table {
 	width: 100%;
 	max-width: 100%;
@@ -219,7 +219,6 @@ cursor: pointer;
 .search .fa:hover{
 	color: #4caf50;
 }
-
 .press {
   display: none;
   position: absolute;
@@ -865,7 +864,6 @@ footer{
 	height: auto;
 	position: relative;
 }
-
 .footer_top_1{
 	background: rgba(48, 48, 48, 1);
 	padding: 100px 0 75px;
@@ -962,6 +960,7 @@ font-size: 20px;
 .hover_header_top{
 	display: none;
 }
+
 .closebtn{
 	display: none;
 }
@@ -1120,6 +1119,7 @@ font-size: 20px;
 	  width: calc(100% - 20px);
 	  position: fixed;
 	      margin: 10px;
+
 	  z-index: 99;
 	  top: 0;
 	  left: 0;
@@ -1254,6 +1254,7 @@ font-size: 20px;
 		width: 100%;
 		height: 100px;
 	}
+
 	.banner {
 		height: auto;
 	}
@@ -1400,3 +1401,4 @@ font-size: 20px;
 	}
 
 }
+

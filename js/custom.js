@@ -2,8 +2,7 @@
 
          window.addEventListener('load', function(){
            overlay.style.display = 'none';
-         })
-         
+         });
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
@@ -14,7 +13,6 @@ function closeNav() {
 
 $('.menu li a').click(function () {
   $('#myNav').css("height", "0%");
-
 });
 
 $(document).ready(function () {
@@ -70,6 +68,7 @@ $(document).ready(function () {
     }
   });
 });
+
 /* Scroll Down end */
 /* Scroll Top Function start */
       window.onscroll = function() {scrollFunction()};
@@ -100,6 +99,7 @@ $(window).scroll(function () {
   } else {
     $('.navbar').removeClass("sticky");
     $('.navbar').css({"background-color": "transparent"});
+
   }
 });
 
