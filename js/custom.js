@@ -1,3 +1,9 @@
+         var overlay = document.getElementById("overlay");
+
+         window.addEventListener('load', function(){
+           overlay.style.display = 'none';
+         })
+         
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
 }
@@ -24,12 +30,12 @@ $(document).ready(function () {
   });
 });
 
-        $(document).ready(function() {
-        $(".tab").click(function () {
-            $(".menu li").removeClass("active");
-            $(this).addClass("active");   
-        });
-        });
+$(document).ready(function() {
+  $(".tab").click(function () {
+    $(".menu li").removeClass("active");
+    $(this).addClass("active");   
+    });
+});
     
 $(function () {
   $('#ChangeToggle').click(function () {
